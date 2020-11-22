@@ -1,0 +1,10 @@
+.BottomNavigation {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.BottomNavigationAction {
+    color: 'red'
+}

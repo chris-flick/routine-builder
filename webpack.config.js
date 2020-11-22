@@ -20,7 +20,7 @@ const webpack = require("webpack");
  *      
  */
 module.exports = {
-    entry: "./src/index.js",
+    entry: ['react-hot-loader/patch', './src/index.js'],
     mode: "development",
     module: {
         rules: [
@@ -42,8 +42,9 @@ module.exports = {
     resolve: { 
         extensions: ["*", ".js", ".jsx"],
         alias: {
-            '@Components': path.resolve(__dirname, 'src/components/'),
-            '@Utilities': path.resolve(__dirname, 'src/utilities/')
+            '@hoc': path.resolve(__dirname, 'src/hoc/'),
+            '@ui': path.resolve(__dirname, 'src/ui/'),
+            'src': path.resolve(__dirname, 'src/'),
         }
     },
     output: {

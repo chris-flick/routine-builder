@@ -2,13 +2,11 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            //Assuming your components/utilities live in ./src
-            //Update this path as necessary
-            "@Components/*": [
-                "./src/Components/*"
+            "@hoc/*": [
+                "./src/hoc/*"
             ],
-            "@Utilities/*": [
-                "./src/Utilities/*"
+            "@ui/*": [
+                "./src/ui/*"
             ]
         }
     },
