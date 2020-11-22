@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader/root';
 import React, { Component } from "react";
 
 import Layout from "@hoc/Layout/Layout";
@@ -15,4 +16,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default hot(App);
