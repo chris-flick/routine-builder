@@ -7,6 +7,9 @@
             ],
             "@ui/*": [
                 "./src/ui/*"
+            ],
+            "@components/*": [
+                "./src/components/*"
             ]
         }
     },

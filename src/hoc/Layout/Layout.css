@@ -1,0 +1,7 @@
+.BottomNavigation {
+    display: flex
+}
+
+.NavLink {
+    flex-grow: 1;
+}
