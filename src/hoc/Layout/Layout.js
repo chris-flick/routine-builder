@@ -6,8 +6,8 @@ import AddCircle from '@material-ui/icons/AddCircle';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import Auxiliary from '@hoc/Auxiliary/Auxiliary'
-import BottomNavigation from '@ui/BottomNavigation/BottomNavigation';
-import BottomNavigationAction from '@ui/BottomNavigationAction/BottomNavigationAction';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
 import '@hoc/Layout/Layout.css';
 
 const Layout = (props) => {

@@ -1,5 +1,10 @@
+
 .BottomNavigation {
-    display: flex
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .NavLink {
