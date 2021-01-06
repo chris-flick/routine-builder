@@ -1,4 +1,3 @@
-import { hot } from 'react-hot-loader/root';
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
@@ -37,4 +36,4 @@ class App extends Component {
     }
 }
 
-export default hot(App);
+export default App;

@@ -20,7 +20,7 @@ const webpack = require("webpack");
  *      
  */
 module.exports = {
-    entry: ['react-hot-loader/patch', './src/index.js'],
+    entry: ['./src/index.js'],
     mode: "development",
     module: {
         rules: [
@@ -29,8 +29,7 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: "babel-loader",
                 options: { 
-                    presets: ["@babel/env"],
-                    plugins: ['react-hot-loader/babel']
+                    presets: ["@babel/env"]
                 }
             },
             {
@@ -56,8 +55,6 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "public/"),
         port: 3000,
-        publicPath: "http://localhost:3000/dist/",
-        hotOnly: true
-    },
-    plugins: [new webpack.HotModuleReplacementPlugin()]
+        publicPath: "http://localhost:3000/dist/"
+    }
 };
