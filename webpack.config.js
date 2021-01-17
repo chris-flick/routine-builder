@@ -44,7 +44,7 @@ module.exports = {
             '@hoc': path.resolve(__dirname, 'src/hoc/'),
             '@ui': path.resolve(__dirname, 'src/ui/'),
             '@components': path.resolve(__dirname, 'src/components/'),
-            'src': path.resolve(__dirname, 'src/'),
+            '@src': path.resolve(__dirname, 'src/'),
         }
     },
     output: {
@@ -53,6 +53,7 @@ module.exports = {
         filename: "bundle.js"
     },
     devServer: {
+        historyApiFallback: true,
         contentBase: path.join(__dirname, "public/"),
         port: 3000,
         publicPath: "http://localhost:3000/dist/"

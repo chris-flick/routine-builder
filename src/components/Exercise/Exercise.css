@@ -1,0 +1,10 @@
+.Card-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1em;
+}
+
+.x-span {
+    align-self: flex-end;
+}

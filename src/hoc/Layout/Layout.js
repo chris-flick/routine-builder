@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
+
 
 import HistoryIcon from '@material-ui/icons/History';
 import AddCircle from '@material-ui/icons/AddCircle';
@@ -16,29 +17,33 @@ const Layout = (props) => {
         <Auxiliary>
             <main>{ props.children }</main>
             <BottomNavigation className="BottomNavigation">
-                <NavLink className="NavLink" to="/history">
-                    <BottomNavigationAction 
-                        label='History' 
-                        value='history' 
-                        icon={<HistoryIcon />}>
-                    </BottomNavigationAction>
-                </NavLink>
+                
+                <BottomNavigationAction 
+                    className='NavLink'
+                    component={Link}
+                    to="/history"
+                    label='History' 
+                    value='history' 
+                    icon={<HistoryIcon />}>
+                </BottomNavigationAction>
+                
+                <BottomNavigationAction 
+                    className='NavLink'
+                    component={Link}
+                    to="/"
+                    label='Add Routine' 
+                    value='add_routine' 
+                    icon={<AddCircle />}>
+                </BottomNavigationAction>
 
-                <NavLink className="NavLink" to="/">
-                    <BottomNavigationAction 
-                        label='Add Routine' 
-                        value='add_routine' 
-                        icon={<AddCircle />}>
-                    </BottomNavigationAction>
-                </NavLink>
-
-                <NavLink className="NavLink" to="/profile">
-                    <BottomNavigationAction 
-                        label='Profile' 
-                        value='profile' 
-                        icon={<AccountCircle />}>
-                    </BottomNavigationAction>
-                </NavLink>
+                <BottomNavigationAction 
+                    className='NavLink'
+                    component={Link}
+                    to="/profile"
+                    label='Profile' 
+                    value='profile' 
+                    icon={<AccountCircle />}>
+                </BottomNavigationAction>
             </BottomNavigation>
         </Auxiliary>
     )
